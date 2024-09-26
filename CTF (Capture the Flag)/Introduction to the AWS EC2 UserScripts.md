@@ -1,16 +1,18 @@
-Let's take a look at launching an EC2 Instance with the UserScript functionality to build a CTF Challenge. UserScripts helps us to initialize the EC2 Instance with pre-defined configurations. 
+# Introduction to the AWS EC2 UserScripts
+Let's take a look at launching an EC2 Instance with the UserScript functionality to build a CTF Challenge. UserScripts helps us to initialize the EC2 Instance with pre-defined configurations.  
 
-UserScript defined below:
-- Installs necessary packages.
-- Creates hidden files or services containing flags.
-- Sets up environment configurations for challenges.
+**UserScript defined below:**  
+- Installs necessary packages.  
+- Creates hidden files or services containing flags.  
+- Sets up environment configurations for challenges.  
 
-Understanding User Data Scripts
-When you launch an EC2 instance, you can pass a script via the User Data field. This script runs with root privileges during the first boot cycle of the instance.
+**Understanding User Data Scripts**  
+When you launch an EC2 instance, you can pass a script via the User Data field. This script runs with root privileges during the first boot cycle of the instance.  
 
-Format: The script can be written in bash, PowerShell, or any other scripting language supported by the instance's OS.
-Encoding: Ensure the script is in plain text. For Windows instances, scripts should be Base64-encoded.
+**Format:** The script can be written in bash, PowerShell, or any other scripting language supported by the instance's OS.  
+**Encoding:** Ensure the script is in plain text. For Windows instances, scripts should be Base64-encoded.  
 
+```bash
 #!/bin/bash
 
 # Update package lists
@@ -71,3 +73,4 @@ apt-get install -y net-tools nmap
 # Final message
 echo "CTF environment setup complete."
 
+```
