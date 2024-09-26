@@ -74,3 +74,36 @@ apt-get install -y net-tools nmap
 echo "CTF environment setup complete."
 
 ```
+**Explanation of the Script Components**
+* Update and Package Installation  
+Updates the package lists and installs Apache2, vsftpd, and utilities like ```net-tools``` and ```nmap.```
+
+**Web Challenge**
+* Creates a simple web page.
+* Places a flag in ```/var/www/html/flag.txt.```
+
+**Filesystem Exploration Challenge**
+* Creates a hidden directory ```/var/hidden_dir```.
+* Places a hidden flag ```.hidden_flag.txt``` inside.
+* Adjusts permissions to make discovery more challenging.
+
+**User with Weak Password**
+* Creates a user ```ctfuser``` with the password ```password123```.
+* Participants can practice password cracking techniques.
+
+**Outdated Vulnerable Service**
+* Installs an older version of ```vsftpd``` with known vulnerabilities.
+* Configures it to allow anonymous access.
+* Places a flag in the FTP directory.
+
+**Privilege Escalation Challenge**
+* Sets up a cron job that runs a script every minute.
+* The script ```cron_script.sh``` has world-writeable permissions, allowing participants to modify it and escalate privileges.
+
+**Tools Installation**
+* Installs tools that might be useful for participants if they gain shell access.
+
+
+
+
+
