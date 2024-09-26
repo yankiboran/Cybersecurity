@@ -1,7 +1,7 @@
-# Introduction to the AWS EC2 UserScripts for the CFT Environment
-Let's take a look at launching an EC2 Instance with the UserScript functionality to build a CTF Challenge. UserScripts helps us to initialize the EC2 Instance with pre-defined configurations.  
+# Introduction to the AWS EC2 User Data Scriptss for the CFT Environment
+Let's take a look at launching an EC2 Instance with the User Data Scripts functionality to build a CTF Challenge. User Data Scriptss helps us to initialize the EC2 Instance with pre-defined configurations.  
 
-**UserScript defined below:**  
+**User Data Scripts defined below:**  
 - Installs necessary packages.  
 - Creates hidden files or services containing flags.  
 - Sets up environment configurations for challenges.  
